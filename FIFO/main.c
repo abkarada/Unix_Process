@@ -24,6 +24,7 @@ int main(int argc, char **argv){
 	if(read(fd, &y, sizeof(y)) == -1) return -3;
 	printf("Reading Val: %d \n", y);
 	}
+	close(fd);
 
 	return 0;
 }
